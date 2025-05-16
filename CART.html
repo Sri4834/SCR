@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SCR Agro Farms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CART.css">
+        <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+         <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>SCR Agro Farms</h1>
+                </div>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li><a href="./Home.html" class="ab">Home</a></li>
+                        <li><a class="ab" href="./AboutUs.html">About us</a></li>
+                        <li class="dropdown">
+                            <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Milk</a>
+                                <a href="#">Curd</a>
+                                <a href="#">Lassi</a>
+                                <a href="#">Butter</a>
+                                <a href="#">Ghee</a>
+                                <a href="#">Milk Shakes</a>
+                                <a href="#">Paneer</a>
+                            </div>
+                        </li>
+                        <li><a class="active ab" href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart">
+                        <a href="#"><button><i class="fas fa-shopping-cart"
+                                    style="color: rgb(255, 255, 255);font-size: 16px;"></i> CART</button></a>
+                    </div>
+                    <div class="login-btn">
+                        <a href="#" class="btn">Log In</a>
+                    </div>
+                    <div class="mobile-menu-btn" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- SHOW THIS CONTENT ONLY WHEN CART COUNT == 0 -->
+    <main class="cart-main" id="cart-main-empty" style="display: none;">
+        <div class="cart-empty-container">
+            <div class="cart-empty-icon">
+                <!-- SVG for empty cart -->
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="15" y="30" width="40" height="25" rx="10" stroke="#BDBDBD" stroke-width="4"/>
+                  <path d="M25 30V25C25 18.9249 29.9249 14 36 14C42.0751 14 47 18.9249 47 25V30" stroke="#BDBDBD" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h2 class="cart-empty-title">Cart is empty</h2>
+            <p class="cart-empty-desc">Add some item to the cart</p>
+            <a href="#" class="cart-empty-btn">View all Products</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>SCR AGRO FARMS</h2>
+                    <br>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

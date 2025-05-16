@@ -1,0 +1,564 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Irim';
+}
+
+/* Hide scrollbar for all browsers */
+html {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+
+body {
+    background-color: #f8e8c0;
+    color: #333;
+    line-height: 1.6;
+    /* background: linear-gradient(#E9E0C3, #F6BC50 70%  100%); */
+    overflow-x: hidden;
+    min-height: 100vh;
+    cursor: url('https://cdn.jsdelivr.net/gh/ThioJoe/Win10-Cursors@master/macOS%20Monterey/macOS%20Monterey%20-%20Normal%20Select.cur'), default;
+}
+
+a,
+button,
+.btn,
+.cart button,
+.mobile-menu-btn,
+.search-box button {
+    cursor: url('https://cdn.jsdelivr.net/gh/ThioJoe/Win10-Cursors@master/macOS%20Monterey/macOS%20Monterey%20-%20Link%20Select.cur'), pointer;
+}
+
+input,
+textarea,
+select {
+    cursor: url('https://cdn.jsdelivr.net/gh/ThioJoe/Win10-Cursors@master/macOS%20Monterey/macOS%20Monterey%20-%20Text%20Select.cur'), text;
+}
+
+@font-face {
+    font-family: 'Irim';
+    src: url(./assets/itim-fonts/Itim-Regular.otf);
+    font-weight: bolder;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================= HEADER STYLES =================
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    right: 70%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex: 1;
+    position: relative;
+    left: 25%;
+    font-size: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    font-weight: 500;
+    position: relative;
+    top: 2px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #e67e22;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 26%;
+    bottom: 12px;
+    width: 30%;
+    transform: translateX(-50%);
+    height: 2px;
+    border-radius: 30%;
+    background-color: #e67e22;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a:hover::after {
+    opacity: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    left: 10%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.cart button {
+    background-color: rgb(255, 196, 0);
+    color: white;
+    padding: 12px 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.cart button:hover {
+    background-color: #f8cb03;
+}
+
+.cart a i {
+    margin-right: 5px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Login button styles (header)
+.login-btn .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 22px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+} */
+/* End of HEADER styles */
+
+/* ================= FOOTER STYLES ================= */
+footer {
+    background-color: #fff;
+    padding: 20px 0 10px;
+    /* Reduced height for a more compact footer */
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #f4df84;
+    border-radius: 25%;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: 32px;
+}
+
+.social-icons a:hover {
+    background-color: #c69905;
+    color: #fff;
+}
+
+/* Footer button styles */
+.footer-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #333;
+}
+/* End of FOOTER styles */
+
+
+/* ================= CONTACT PAGE STYLES ================= */
+.hero {
+    padding: 60px 0 30px;
+    width: 35%;
+    position: relative;
+    left: 53%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: left;
+}
+
+.hero-content h2 {
+    font-size: 22px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 40px 60px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#box1 {
+    flex: 1;
+    max-width: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    position: relative;
+    right: 15%;
+    height: 10%;
+    bottom: 50px;
+}
+
+.Container1 h2 {
+    /* font-size: 24px; */
+    /* font-weight: 700; */
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.Container1 h2 {
+    margin-bottom: 20px;
+    /* color: #555; */
+    line-height: 1.6;
+    /* font-size: 18px; */
+    font-size: 24px;
+    /* font-weight: 400; */
+}
+
+.Container1 a {
+    color: #000;
+    text-decoration: underline;
+}
+
+#box2 {
+    flex: 1;
+    position: relative;
+    right: 5%;
+}
+
+.contact {
+    background: linear-gradient(to bottom, #f8e8c0, #f8d56f);
+    border-radius: 8px;
+    padding: 50px 40px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+    width: 150%;
+    position: relative;
+    right: 15%;
+}
+
+.contact h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+    display: block;
+}
+
+.contact h3 {
+    margin-bottom: 30px;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact {
+    border: 1px solid #333;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-row .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact input[type="text"],
+.contact input[type="tel"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 0.6px inset #9a9a9a;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.contact input[type="email"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 0.6px inset #9a9a9a;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+}
+
+.contact textarea {
+    resize: none;
+    min-height: 180px;
+    max-height: 180px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 0.6px inset #9a9a9a;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.17em;
+    font-weight: 700;
+    cursor: pointer;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #fdd078f0;
+    color: black;
+    border: 1px solid white;
+    /* text-shadow: 12px 12px 14px white; */
+}
+
+.contact button:active {
+    transform: scale(0.98);
+}
+
+/* END of contact form styles */
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #box1,
+    #box2 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .contact,
+    #box1 {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content h2 {
+        font-size: 16px;
+    }
+}

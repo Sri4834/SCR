@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SCR Agro Farms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Contact.css">
+        <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+         <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>SCR Agro Farms</h1>
+                </div>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li><a href="./Home.html" class="ab">Home</a></li>
+                        <li><a class="ab" href="./AboutUs.html">About us</a></li>
+                        <li class="dropdown">
+                            <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Milk</a>
+                                <a href="#">Curd</a>
+                                <a href="#">Lassi</a>
+                                <a href="#">Butter</a>
+                                <a href="#">Ghee</a>
+                                <a href="#">Milk Shakes</a>
+                                <a href="#">Paneer</a>
+                            </div>
+                        </li>
+                        <li><a class="ab" href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart">
+                        <a href="CART.html"><button><i class="fas fa-shopping-cart"
+                                    style="color: rgb(255, 255, 255);font-size: 16px;"></i> CART</button></a>
+                    </div>
+                    <div class="login-btn">
+                        <a href="#" class="btn">Log In</a>
+                    </div>
+                    <div class="mobile-menu-btn" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero abc">
+        <div class="hero-content">
+            <h1 style="letter-spacing: 2px;">Contact us 💬</h1>
+            <h2 style="line-height: 0">We'd Love to Hear From You, Get In Touch With Us!</h2>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section abc" style="display: flex; gap: 40px; align-items: stretch;">
+        <div id="box1" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <div class="Container1">
+                <h2>LETS GET CONNECTED ! 🤝</h2>
+                <h3>
+                    Contact Us And Get Dairy Products List
+                </h3>
+                <br>
+                <h3>
+                    We are available between 10AM-6PM,⏱️<br>
+                    Feel free to contact.
+                </h3>
+<br>
+                <h3>
+                    For Overseas Enquiry :<br>
+                    <span style="font-size:medium;position: relative;
+                    left: 20px;">Mrs. Sarika Reddy : 9868220018<br>
+                    S.Chandrashekar Reddy:9701039748<br>
+                    E-Mail id : <a href="mailto:info@doodhbhiaurshudhbhi.com">info@doodhbhiaurshudhbhi.com</a></span>
+                </h3>
+            </div>
+        </div>
+        <div id="box2" class="abc" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <section class="contact">
+                <form action="contact.html" method="POST" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullname">Full name</label>
+                            <input type="text" name="name" id="fullname" placeholder="Full Name" required pattern="^[A-Za-z][A-Za-z\s\.'-]{2,49}$" title="Enter a valid full name (letters, spaces, apostrophes, hyphens, 3-50 chars)">
+                            <p class="error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Mobile number</label>
+                            <input type="tel" name="phone" id="tel" placeholder="Mobile Number" required pattern="^(\+91[\-\s]?)?[6-9][0-9]{9}$" title="Enter a valid Indian mobile number (10 digits, may start with +91)">
+                            <p class="error"></p>
+                        </div>
+                    </div>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address">
+                    <p class="error"></p>
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Enter your question or message" required minlength="10" maxlength="1000" pattern="^[\w\s.,'!?@#%&*()\-+=:;\[\]{}|/\\$\r\n]{10,1000}$" title="Message must be 10-1000 characters and contain only valid characters."></textarea>
+                    <p class="error"></p>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>SCR AGRO FARMS</h2>
+                    <br>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('active');
+        });
+        // Extreme and highly safe client-side validation with instant feedback
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            // Helper validation functions
+            function validateName(name) {
+                return /^[A-Za-z][A-Za-z\s\.'-]{3,49}$/.test(name.trim());
+            }
+            function validatePhone(phone) {
+                return /^(\+91[\-\s]?)?[6-9][0-9]{9}$/.test(phone.trim());
+            }
+            function validateEmail(email) {
+                return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.trim());
+            }
+            function validateMessage(message) {
+                return /^[\w\s.,'!?@#%&*()\-+=:;\[\]{}|/\\$\r\n]{4,1000}$/.test(message.trim());
+            }
+
+            // Get fields and error elements
+            const nameInput = contactForm.name;
+            const phoneInput = contactForm.phone;
+            const emailInput = contactForm.email;
+            const messageInput = contactForm.message;
+            const nameError = nameInput.parentElement.querySelector('.error');
+            const phoneError = phoneInput.parentElement.querySelector('.error');
+            const emailError = emailInput.nextElementSibling;
+            const messageError = messageInput.nextElementSibling;
+
+            // Style error messages
+            [nameError, phoneError, emailError, messageError].forEach(e => {
+                e.style.color = '#ff1744'; // Red text
+                e.style.fontWeight = 'bold';
+                e.style.fontSize = '1em';
+                e.style.margin = '2px 0 8px 0';
+                e.style.minHeight = '18px';
+                // e.style.webkitTextStroke = '0.4px #fff';
+                e.style.textStroke = '0.4px #fff';
+            });
+
+            // Real-time validation handlers
+            nameInput.addEventListener('input', function() {
+                if (!validateName(nameInput.value)) {
+                    nameError.textContent = 'Full name must be 4-50 characters, letters, spaces, apostrophes, hyphens only.';
+                } else {
+                    nameError.textContent = '';
+                }
+            });
+            phoneInput.addEventListener('input', function() {
+                let val = phoneInput.value.trim();
+                // If user enters 10 digits and no +91, auto-prepend +91
+                if (/^[6-9][0-9]{9}$/.test(val)) {
+                    phoneInput.value = '+91' + val;
+                    val = phoneInput.value;
+                }
+                if (!validatePhone(val)) {
+                    phoneError.textContent = 'Enter a valid Indian mobile number (10 digits, may start with +91).';
+                } else {
+                    phoneError.textContent = '';
+                }
+            });
+            emailInput.addEventListener('input', function() {
+                if (!validateEmail(emailInput.value)) {
+                    emailError.textContent = 'Enter a valid email address.';
+                } else {
+                    emailError.textContent = '';
+                }
+            });
+            messageInput.addEventListener('input', function() {
+                if (!validateMessage(messageInput.value)) {
+                    messageError.textContent = 'Message must be 4-1000 characters and contain only valid characters.';
+                } else {
+                    messageError.textContent = '';
+                }
+            });
+
+            // On submit, prevent if any error
+            contactForm.addEventListener('submit', function(e) {
+                let valid = true;
+                if (!validateName(nameInput.value)) {
+                    nameError.textContent = 'Full name must be 3-50 characters, letters, spaces, apostrophes, hyphens only.';
+                    valid = false;
+                }
+                if (!validatePhone(phoneInput.value)) {
+                    phoneError.textContent = 'Enter a valid Indian mobile number (10 digits, may start with +91).';
+                    valid = false;
+                }
+                if (!validateEmail(emailInput.value)) {
+                    emailError.textContent = 'Enter a valid email address.';
+                    valid = false;
+                }
+                if (!validateMessage(messageInput.value)) {
+                    messageError.textContent = 'Message must be 10-1000 characters and contain only valid characters.';
+                    valid = false;
+                }
+                if (!valid) {
+                    e.preventDefault();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
